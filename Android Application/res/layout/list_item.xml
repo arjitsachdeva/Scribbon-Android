@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:weightSum="1.0"
+    android:layout_weight="1" android:layout_height="wrap_content">
+
+    
+    <TextView 
+        android:id="@+id/tvMessage" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:layout_margin="15dp"
+        android:text="I told you now to come"/>
+        
+    <TextView
+        android:id="@+id/tvName" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:textSize="10dip"
+        android:layout_below="@+id/tvMessage"
+        android:layout_margin="15dp"
+        android:gravity="right"
+        android:text="Kamal"/>
+    
+    <TextView 
+        android:id="@+id/tvTime" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:textSize="10dip"
+        android:layout_below="@+id/tvMessage"
+		android:layout_margin="15dp"
+		android:gravity="left"
+        android:text="09-11-2012 10:12 AM"/>
+    
+</RelativeLayout>

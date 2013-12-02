@@ -1,0 +1,107 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agrimainfotech.android.imagesnap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7" />
+    <!-- Internet Access Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- File Storage Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Light"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".DashboardActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!--  Login Activity -->
+        <activity
+            android:label="Login Account" 
+            android:name=".LoginActivity"></activity>
+
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account" 
+            android:name=".RegisterActivity"></activity>
+        
+        <!--  Photo Activity -->
+        <activity
+            android:label="Photos"
+            android:name=".PhotosActivity">
+        </activity>
+        
+        <!--  New Photo Activity -->
+        <activity
+            android:label="NewPhotos"
+            android:name=".NewPhotosActivity">
+        </activity>
+        
+        <!--  Friend Activity -->
+        <activity
+            android:label="Friends"
+            android:name=".FriendsActivity">
+        </activity>
+        
+        <!--  Message Activity -->
+        <activity
+            android:label="Messages"
+            android:name=".MessagesActivity">
+        </activity>
+        
+        <!--  Conversation List Activity -->
+        <activity
+            android:label="Conversation List"
+            android:name=".ConversationActivity">
+        </activity>
+        
+        <!--  Add Friends Activity -->
+        <activity
+            android:label="Add Friend"
+            android:name=".AddFriendsActivity">
+        </activity>
+        
+        <!--  Show Profile Activity -->
+        <activity
+            android:label="Profile View"
+            android:name=".ShowProfileActivity">
+        </activity>
+        
+        <!--  Show Image Activity -->
+        <activity
+            android:label="Image View"
+            android:name=".ShowImageActivity">
+        </activity>
+        
+        <!--  Upload File Activity -->
+        <activity
+            android:label="Upload File"
+            android:name=".UploadFile">
+        </activity>
+        
+        <!--  Request List Activity -->
+        <activity
+            android:label="Request List"
+            android:name=".RequestActivity">
+        </activity>
+        
+        <!--  Select Friend Activity -->
+        <activity
+            android:label="Select Friend"
+            android:name=".SelectFriendActivity">
+        </activity>
+        
+    </application>
+
+</manifest>

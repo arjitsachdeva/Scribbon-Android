@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#ccc2c6" >
+  
+    <Button 
+        android:id="@+id/bCompose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Compose"
+        android:layout_margin="5dp" />
+    
+  <!--  Screen Design for MESSAGES -->
+
+    <ListView
+        android:id="@+id/lvPeople"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

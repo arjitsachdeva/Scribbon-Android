@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/rlFrame"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+    <ImageView
+	    android:id="@+id/ivShowImage"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true" />
+    
+	<Button
+	    android:id="@+id/bLike"
+	    android:layout_marginTop="5dp"
+		android:layout_width="160px"
+		android:text="LIKE"
+		android:layout_height="wrap_content">
+	</Button>
+
+	<Button
+	    android:id="@+id/bRepin"
+	    android:layout_marginTop="5dp"
+	    android:layout_width="160px"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/bLike"
+	    android:text="REPIN" />
+
+	<Button
+	    android:id="@+id/bComments"
+	    android:layout_marginTop="5dp"
+	    android:layout_width="160px"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/bRepin"
+	    android:text="COMMENT" />
+
+	<TextView
+	    android:id="@+id/tvTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/bLike"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="5dp"
+	    android:text="Medium Text"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/tvDescription"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/tvTitle"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:text="Small Text"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	<ListView
+	    android:id="@+id/lvComments"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tvDescription" >
+	</ListView>
+	
+	<EditText 
+	    android:id="@+id/etComments"
+	    android:layout_width="270dp"
+	    android:layout_height="wrap_content"
+	    android:hint="Comment"
+	    android:layout_below="@+id/lvComments" />
+	
+	<Button
+	    android:id="@+id/bComment"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:text="Post"
+	    android:layout_below="@+id/lvComments"
+	    android:layout_toRightOf="@+id/etComments">
+	    
+	</Button>
+
+</RelativeLayout>

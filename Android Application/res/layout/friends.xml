@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="#ccc2c6" >
+  
+  <ImageView
+  	  android:id="@+id/iAvatar"
+	  android:layout_width="80dp"
+	  android:layout_height="80dp" 
+	  android:src="@drawable/stub" 
+	  android:scaleType="centerCrop"/>
+  
+  <TextView
+      android:id="@+id/tvName"
+      android:textSize="8dp"
+	  android:layout_width="50dp"
+	  android:layout_height="50dp"/>
+  
+</LinearLayout>

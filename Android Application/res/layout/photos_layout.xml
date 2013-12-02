@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/ivTitle"
+        android:text="              MY                    FRIENDS              RANDOM"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/scribble">
+
+    <!-- Screen Design for MY PHOTOS -->
+
+	
+	<GridView 
+        android:id="@+id/myPhotoList"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:numColumns="auto_fit"
+	    android:columnWidth="90dp"
+	    android:horizontalSpacing="10dp"
+	    android:verticalSpacing="10dp"
+	    android:gravity="center"
+	    android:stretchMode="columnWidth">
+    </GridView>
+    
+    
+</LinearLayout>
+
+</LinearLayout>
+

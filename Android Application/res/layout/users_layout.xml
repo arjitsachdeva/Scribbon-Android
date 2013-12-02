@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="#ccc2c6" >
+    
+<LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <!-- Screen Design for the FRIENDS -->
+
+    <EditText
+        android:id="@+id/etUserSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Search Users"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+</LinearLayout>
+
+	<GridView 
+        android:id="@+id/gUsers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="auto_fit"
+	    android:columnWidth="90dp"
+	    android:horizontalSpacing="10dp"
+	    android:verticalSpacing="10dp"
+	    android:gravity="center"
+	    android:stretchMode="columnWidth">
+    
+    </GridView>
+
+
+</LinearLayout>
